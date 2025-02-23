@@ -1,0 +1,81 @@
+* Towards EmacsListen
+Consolidating information on using voice control for Emacs.
+
+** Purpose
+Emacs, with its hackability and wide range of application, has the
+potential to be the ultimate environment for voice controlled
+computing.
+
+Unfortunately, information and tools aiming to take us closer to this
+goal is fragmented and oftentimes hidden away in small repositories.
+This makes it hard to get running with a good setup, as getting a lay
+of the land is difficult.
+
+This repository aims to be a centralized hub consolidating information
+on how one can configure Emacs to be the perfect voice controlled
+environment to accomplish one's computing goals.  This ideal of Emacs
+as a voice controlled environment for all computing tasks is dubbed
+EmacsListen, in homage to Emacspeak, a project that made Emacs into an
+audio oriented computing environment.
+
+** Current State
+Right now, this research document should should accumulate all
+information accessible on the internet for setting up Emacs as a voice
+controlled environment.  At this stage, we try to collect an index of
+the tools available.  For this reason, this document may just look
+like a list of links at the start.  From this, a proper "EmacsListen
+canon" will be selected.
+
+The hope is that with time, this document evolves into a guide that
+can get a person running with voice control in a reasonable amount of
+time.  It should also be a hub of information for the voice control
+hacker to find what already exist, enabling better cooperation to
+develop a more powerful environment.
+
+** Index
+If you think something is missing from here, please open an issue or
+pull request!
+
+*** TODO Write descriptions for all the tools.
+
+*** Voice Control Backends
+- https://numenvoice.org/
+- https://kaldi-asr.org/doc/about.html
+- https://github.com/daanzu/kaldi-active-grammar
+- https://serenade.ai/
+- https://cmusphinx.github.io/
+- https://github.com/openai/whisper
+
+**** Proprietary Backends
+- https://talonvoice.com
+- https://utterlyvoice.com/
+- https://www.nuance.com/dragon.html
+
+**** TODO Write distilled comparison between the backends
+
+*** Generic Packages
+These packages improve the voice control environment independently
+of which backend is picked.
+
+- https://github.com/ErikPrantare/hatty.el
+- https://github.com/ErikPrantare/cursorfree.el
+- https://github.com/jcaw/voicemacs/
+
+*** Backend Specific Packages
+- https://github.com/lepisma/emacs-speech-input (It seems
+  they aim this to be backend-agnostic eventually)
+
+**** Talon
+- https://github.com/ErikPrantare/talon-list.el
+- https://github.com/talonhub/community/tree/main/apps/emacs (Part of
+  the community repository for talon)
+- https://github.com/jcaw/talonscript-mode
+
+**** Serenade
+- https://github.com/justin-roche/serenade-mode
+
+**** CMU Sphinx
+- https://github.com/cwebber/emacslisten
+
+**** Whisper
+- https://github.com/natrys/whisper.el
