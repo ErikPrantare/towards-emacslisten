@@ -35,7 +35,8 @@ develop a more powerful environment.
 ** Desiderata for EmacsListen
 - Hackability: Hacking on the voice control system should be as
   comfortable and powerful as hacking on any other Emacs feature or
-  configuration.
+  configuration.  Creating ad-hoc solutions to new situations should
+  be easy.
 - Good citizen: As far as possible, interplay with the existing
   faculties of Emacs as nicely as possible.  For example, if voice
   commands can be made into command loop input events, this is
@@ -54,6 +55,15 @@ develop a more powerful environment.
 - Documented: A motivated person with some computer experience should
   be able to figure out how to achieve their goals in EmacsListen
   without having to dig into the code or ask for help in forums.
+
+*** Technical desiderata
+- Ability to specify the language through a formal grammar.  This
+  formal grammar should increase precision by restricting what er thus
+  beach recognition recognizes.
+- Ability to have dynamic grammars depending on the current
+  state.  This is analogous to how different keymaps are available
+  depending on the state of Emacs.
+- Ability to specify the grammar completely from Emacs.
 
 ** Index
 If you think something is missing from here, please open an issue or
