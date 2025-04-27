@@ -73,6 +73,7 @@ pull request!
 
 *** Voice Control Backends
 - https://numenvoice.org/
+  - Does not seem to allow grammars, just individual commands.
 - https://kaldi-asr.org/doc/about.html
 - https://github.com/daanzu/kaldi-active-grammar
 - https://serenade.ai/
@@ -93,6 +94,10 @@ of which backend is picked.
 - https://github.com/ErikPrantare/hatty.el
 - https://github.com/ErikPrantare/cursorfree.el
 - https://github.com/jcaw/voicemacs/
+  - Performs commands by creating a new input event type.  This
+    approach is an example of being a good citizen: By putting the
+    speech events into the command loop, things like undo boundaries
+    and keyboard macros automatically work as expected.
 
 *** Backend Specific Packages
 - https://github.com/lepisma/emacs-speech-input (It seems
