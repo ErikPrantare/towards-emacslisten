@@ -58,16 +58,17 @@ develop a more powerful environment.
 
 *** Technical desiderata
 - Ability to specify the language through a formal grammar.  This
-  formal grammar should increase precision by restricting what er thus
-  beach recognition recognizes.
+  formal grammar should increase precision by restricting what the
+  speech recognition engine recognizes.
 - Ability to have dynamic grammars depending on the current
   state.  This is analogous to how different keymaps are available
   depending on the state of Emacs.
 - Ability to specify the grammar completely from Emacs.
 
 ** Index
-If you think something is missing from here, please open an issue or
-pull request!
+If you think something is missing from here, or if you have written
+some package you think might be useful, please open an issue or pull
+request!
 
 *** TODO Write descriptions for all the tools.
 
