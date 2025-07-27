@@ -19,20 +19,14 @@ EmacsListen, in homage to Emacspeak, a project that made Emacs into an
 audio oriented computing environment.
 
 ** Current State
-Right now, this research document should should accumulate all
-information accessible on the internet for setting up Emacs as a voice
-controlled environment.  At this stage, we try to collect an index of
-the tools available.  For this reason, this document may just look
-like a list of links at the start.  From this, a proper "EmacsListen
-canon" will be selected.
-
 The hope is that with time, this document evolves into a guide that
 can get a person running with voice control in a reasonable amount of
-time.  It should also be a hub of information for the voice control
-hacker to find what already exist, enabling better cooperation to
-develop a more powerful environment.
+time.
 
 ** Desiderata for EmacsListen
+- Easy to set up: Getting a very basic initial setup going should be
+  doable with relatively little mechanical input, so as to make setup
+  as easy as possible for people suffering pain.
 - Hackability: Hacking on the voice control system should be as
   comfortable and powerful as hacking on any other Emacs feature or
   configuration.  Creating ad-hoc solutions to new situations should
@@ -43,11 +37,8 @@ develop a more powerful environment.
   preferable to having a parallel system for voice input.  In this
   way, old functionality can more easily be leveraged for voice
   control.
-- Free (as in freedom): Ideally, no proprietary components would be
-  required to get a good voice control experience.  If it is not
-  currently possible, be mindful in designing the components in a way
-  that would make it easy to switch out the proprietary components
-  should the possibility arise.
+- Free (as in freedom): No proprietary components should be required
+  to get a good voice control experience.
 - Input agnostic: While EmacsListen optimizes for voice control, try
   to design the systems in a way that still would make them amenable
   for alternative input modalities.  Having a unified interface across
@@ -65,28 +56,21 @@ develop a more powerful environment.
   depending on the state of Emacs.
 - Ability to specify the grammar completely from Emacs.
 
-** Index
-If you think something is missing from here, or if you have written
-some package you think might be useful, please open an issue or pull
-request!
+** Preliminary canon
+*** Speech Recognition
+[[https://github.com/dictation-toolbox/dragonfly][Dragonfly]] with [[https://github.com/dictation-toolbox/dragonfly][kaldi-active-grammar]] as the backend.
 
-*** TODO Write descriptions for all the tools.
+**** Potential candidates for inclusion
+- [[https://cmusphinx.github.io/][CMU Sphinx]] as an alternate backend.
+- [[https://github.com/openai/whisper][Whisper]] for multilingual dictation.
 
-*** Voice Control Backends
-- https://numenvoice.org/
-  - Does not seem to allow grammars, just individual commands.
-- https://kaldi-asr.org/doc/about.html
-- https://github.com/daanzu/kaldi-active-grammar
-- https://serenade.ai/
-- https://cmusphinx.github.io/
-- https://github.com/openai/whisper
-
-**** Proprietary Backends
-- https://talonvoice.com
-- https://utterlyvoice.com/
-- https://www.nuance.com/dragon.html
-
-**** TODO Write distilled comparison between the backends
+**** Rejected candidates
+- https://numenvoice.org/: Does not seem to allow grammars, just
+  individual commands.
+- https://serenade.ai/: Not under active maintenance.
+- https://talonvoice.com: Proprietary.
+- https://utterlyvoice.com/: Proprietary.
+- https://www.nuance.com/dragon.html: Proprietary.
 
 *** Generic Packages
 These packages improve the voice control environment independently
@@ -103,15 +87,6 @@ of which backend is picked.
 *** Backend Specific Packages
 - https://github.com/lepisma/emacs-speech-input (It seems
   they aim this to be backend-agnostic eventually)
-
-**** Talon
-- https://github.com/ErikPrantare/talon-list.el
-- https://github.com/talonhub/community/tree/main/apps/emacs (Part of
-  the community repository for talon)
-- https://github.com/jcaw/talonscript-mode
-
-**** Serenade
-- https://github.com/justin-roche/serenade-mode
 
 **** CMU Sphinx
 - https://github.com/cwebber/emacslisten
